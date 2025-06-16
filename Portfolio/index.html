@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VLC | Portfolio</title>
+    <link rel="icon" href="img/vl.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation"></div>
+
+    <!-- Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <nav>
+          <div class="logo" title="Curious? Try clicking me 3x">VLC</div>
+          <ul class="nav-links">
+            <li>
+              <a href="#home" class="nav-link" title="Shortcut key: H for Home"
+                >Home</a
+              >
+            </li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li>
+              <a
+                href="#contact"
+                class="nav-link"
+                title="Shortcut key: C for Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Web Designer</h1>
+          <p class="subtitle">
+            I'll make your site look
+            <span class="typewriter" id="typewriter"></span>
+          </p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-content">
+          <div class="about-img slide-in-left">
+            <img src="img/pic-port.png" alt="Profile" />
+          </div>
+          <div class="about-text slide-in-right">
+            <h3>Hi, I'm Vince Lei Caventa</h3>
+            <p>
+              I'm a graduating IT student at
+              <strong
+                ><span style="color: #4facfe"
+                  >Nueva Ecija University of Science and Technology.</span
+                ></strong
+              >
+              I thought college would be easy, but it turned out to be more
+              challenging than I expected. Still, the experience has been worth
+              it—I’m enjoying what I do and have made a lot of great friends
+              along the way.
+            </p>
+            <p>
+              When I'm not coding, I enjoy exploring new technologies and
+              playing online games. Gaming helps sharpen my problem-solving and
+              critical thinking skills by training me to make quick, strategic
+              decisions.
+            </p>
+            <p>
+              I believe in writing clean, maintainable code and creating digital
+              experiences that make a difference in people's lives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title fade-in">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category fade-in">
+            <h3>HTML</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>Bootstrap</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>Github</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>Figma</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>UI/UX Design</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>Wireframing</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>Color Theory</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>WordPress</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>PHP</h3>
+          </div>
+          <div class="skill-category fade-in">
+            <h3>SQL Databases</h3>
+          </div>
+        </div>
+        <div class="skill-tool fade-in">
+          <h3>I build smarter with AI tools</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- 1 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img src="img/portv1.png" alt="Portfolio V1" />
+            </div>
+            <div class="project-info">
+              <h3>Portfolio V1</h3>
+              <p>
+                My first portfolio website project in my first year of college.
+                Starting with a simple design, it showcases my journey as a web
+                designer.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">GitHub</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://vincelei.github.io/First-portpolio/"
+                  onclick="showDemo('Portfolio Version1')"
+                  >🔗 Live Demo</a
+                >
+                <a
+                  href="https://github.com/vincelei/First-portpolio"
+                  onclick="showGithub('Portfolio Version1')"
+                  >📱 GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img src="img/portv2.png" alt="Portfolio V2" />
+            </div>
+            <div class="project-info">
+              <h3>Portfolio V2</h3>
+              <p>
+                The second iteration of my portfolio website, showcasing my new
+                learings and skills in web design.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">GitHub</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://vincelei.github.io/Portpolio/"
+                  onclick="showDemo('Portfolio Version2')"
+                  >🔗 Live Demo</a
+                >
+                <a
+                  href="https://github.com/vincelei/Portpolio"
+                  onclick="showGithub('Portfolio Version2')"
+                  >📱 GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img src="img/healthrecord.png" alt="HealthRecord" />
+            </div>
+            <div class="project-info">
+              <h3>Barangay Health Record</h3>
+              <p>
+                A simple system with a CRUD for managing barangay health
+                records, including patient info, and treatments.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">NetBeans</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">XAMPP</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/vincelei/Health-Record"
+                  onclick="showGithub('Barangay Health Record')"
+                  >📱 GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img src="img/Carrental.png" alt="CarRental" />
+            </div>
+            <div class="project-info">
+              <h3>Car Rental Mobile App</h3>
+              <p>
+                A simple mobile app for car rentals with authomatic
+                authentication, car listings, and booking features.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Figma</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://www.figma.com/proto/aLNMaTA9fRslRHyvTYLkMI/Caventa--Vince-Lei-B.?node-id=538-49&t=Dxw1DbmOpHBVCdSa-1"
+                  onclick="showDemo('Car Rental Mobile App in figma' + '\nClick the Fill view to see the ')"
+                  >🔗 Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img src="img/landingpage.png" alt="CarRental" />
+            </div>
+            <div class="project-info">
+              <h3>Landing Page</h3>
+              <p>---</p>
+              <div class="project-tags">
+                <span class="tag">WordPress</span>
+              </div>
+              <div class="project-links"></div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img src="img/Agency.png" alt="CarRental" />
+            </div>
+            <div class="project-info">
+              <h3>Project Agency</h3>
+              <p>---</p>
+              <div class="project-tags">
+                <span class="tag">WordPress</span>
+              </div>
+              <div class="project-links"></div>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title fade-in">Let's Connect</h2>
+        <div class="contact-content">
+          <div class="contact-info slide-in-left">
+            <h3>Get In Touch</h3>
+            <p>
+              I'm always open to discussing new opportunities, creative
+              projects, or simply chatting about tech, design, or innovation.
+            </p>
+            <p>
+              Feel free to reach out via email, phone, or WhatsApp. You can also
+              fill out the contact form, and I’ll get back to you soon.
+            </p>
+            <div class="contact-item">
+              <i>📧</i>
+              <span>vinceleicaventa.neust@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i>📱</i>
+              <span>+63 961 191 3374</span>
+            </div>
+            <div class="contact-item">
+              <i>📍</i>
+              <span>Cabanatuan City, Nueva Ecija, PH</span>
+            </div>
+            <div class="contact-item">
+              <i>💼</i>
+              <span>Available for opportunities</span>
+            </div>
+          </div>
+          <div class="contact-form slide-in-right">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/vincelei.caventa"
+            onclick="openSocial('facebook')"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://github.com/vincelei"
+            onclick="openSocial('github')"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/vincecaventa/"
+            onclick="openSocial('instagram')"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <p>&copy; 2025 Vince Caventa</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
